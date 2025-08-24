@@ -1,0 +1,112 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    height: 100vh;
+    background-color: var(--Yellow);
+}
+
+p {
+    font-size: 16px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 7px 6px 0 0 black;
+}
+
+.card>div:not(.card-image) {
+    margin-left: 8px;
+}
+
+.card .card-image {
+    padding: 8px;
+    text-align: center;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+
+.card .card-image img {
+    transition: 0.3s all;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .card-image:hover img {
+    transform: scale(1.1) translateY(12px);
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card .card-landing {
+    position: relative;
+    padding: 25px 0 0;
+}
+
+.card .card-landing h3 {
+    position: absolute;
+    top: 5px;
+    margin: 0;
+    left: 0;
+    background: var(--Yellow);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 5px;
+    letter-spacing: -0.5px;
+}
+
+.card .card-landing p {
+    color: var(--Gray-950);
+}
+
+.card .card-info {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card .card-info h2 {
+    font-size: 20px;
+    transition: 0.2s all;
+}
+
+.card .card-info h2:hover {
+    color: var(--Yellow);
+}
+
+.card .card-auth {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card .card-auth img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.card .card-auth p {
+    color: var(--Gray-950);
+    font-weight: bold;
+}
